@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    /* Módulos y Entorno */
+    "target": "ES2020",         // Usar sintaxis moderna
+    "module": "ESNext",        // Usando módulos ES modernos
+    "esModuleInterop": true,     // CLAVE: Resuelve el error de importación de Express (TS1259)
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2020"],           // Asegura que tienes acceso a las APIs modernas
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    /* Tipado Estricto (La Base de TypeScript) */
+    "strict": true,              // Habilita la mayoría de las comprobaciones estrictas
+    "noImplicitAny": true,       // CLAVE: Resuelve el error de 'req' y 'res' (TS7006)
+    "skipLibCheck": true         // Acelera la compilación al saltarse la verificación de archivos .d.ts
+  },
+  "include": ["src/**/*"]
+}
